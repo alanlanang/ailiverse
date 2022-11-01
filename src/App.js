@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./common-component/Navbar";
+import Navbar from "./commons/Navbar";
 import Projects from "./views/Projects";
 
 const App = () => {

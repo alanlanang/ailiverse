@@ -31,12 +31,10 @@ const Navbar = () => {
               </div>
             </Link>
           </button>
-          {/* <span
+          <span
             style={{ width: "55px" }}
-            className={`border-opacity-0 ml-1 --isBorderNotActive  ${
-              isActiveMenuByURL === "report" ? "--isBorderActive" : ""
-            }`}
-          ></span> */}
+            className={`border-opacity-0 ml-1 --isBorderActive`}
+          ></span>
         </div>
         <div className="navLinkMenu">
           <button className={`items-center text-center`}>
@@ -46,12 +44,6 @@ const Navbar = () => {
               </div>
             </Link>
           </button>
-          {/* <span
-            style={{ width: "55px" }}
-            className={`border-opacity-0 ml-1 --isBorderNotActive  ${
-              isActiveMenuByURL === "report" ? "--isBorderActive" : ""
-            }`}
-          ></span> */}
         </div>
         <div className="navLinkMenu">
           <button className={`items-center text-center`}>
@@ -61,12 +53,6 @@ const Navbar = () => {
               </div>
             </Link>
           </button>
-          {/* <span
-            style={{ width: "55px" }}
-            className={`border-opacity-0 ml-1 --isBorderNotActive  ${
-              isActiveMenuByURL === "report" ? "--isBorderActive" : ""
-            }`}
-          ></span> */}
         </div>
       </div>
       <div className="flex-none flex flex-row flex-wrap nav-icons">
