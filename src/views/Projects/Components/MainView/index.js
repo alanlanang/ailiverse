@@ -1,8 +1,8 @@
 import React from "react";
-import Filter from "../../../../common-component/Filter";
-import IntroCard from "../../../../common-component/IntroCard";
+import Filter from "../../../../commons/Filter";
+import IntroCard from "../../../../commons/IntroCard";
 import { TbFolders } from "react-icons/tb";
-import ProjectCard from "../../../../common-component/ProjectCard";
+import ProjectCard from "../../../../commons/ProjectCard";
 
 const projects = [
   {

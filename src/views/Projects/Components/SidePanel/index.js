@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoCard from "../../../../common-component/PhotoCard";
+import PhotoCard from "../../../../commons/PhotoCard";
 import { HiHashtag } from "react-icons/hi2";
 import { BiImage } from "react-icons/bi";
 import { BsCheckCircleFill } from "react-icons/bs";
