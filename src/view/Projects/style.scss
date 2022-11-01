@@ -1,0 +1,33 @@
+.reportContainer {
+  @apply flex flex-row h-screen overflow-y-hidden;
+  padding-top: 65px;
+
+  .sidePanel {
+    box-shadow: inset -2px 0 8px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #e6e6e6;
+    background-color: #fcfcfc;
+    width: 400px;
+
+    .sidePanelInner {
+      padding: 5px;
+      .sidePanelLine {
+        height: 1px;
+        background-color: #e6e6e6;
+      }
+    }
+  }
+
+  .mainView {
+    @apply w-full bg-white overflow-y-auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .mainViewInner {
+      @apply flex flex-col gap-5;
+      height: calc(100vh - 138px);
+      margin: 30px 40px;
+    }
+  }
+}

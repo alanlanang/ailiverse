@@ -1,0 +1,89 @@
+$navMenuItemWidth: 9rem;
+
+.navNavigationContainer {
+  @apply flex;
+  @apply justify-between;
+  @apply px-10;
+  @apply fixed;
+  @apply z-40;
+  @apply w-full;
+  @apply max-w-full;
+  @apply bg-greenAV;
+  @apply top-0;
+  @apply text-white;
+  height: 68px;
+
+  .search {
+    @apply bg-grenAV20 py-3 rounded-default;
+  }
+
+  .navLinkMenu {
+    @apply flex;
+    @apply flex-col;
+    @apply text-gray-700;
+    @apply whitespace-normal;
+
+    min-width: $navMenuItemWidth;
+
+    button {
+      @apply text-white;
+      @apply h-full;
+      @apply flex;
+      @apply flex-row;
+      @apply my-auto;
+      @apply font-medium;
+      @apply text-white;
+
+      .button-ripple {
+        @apply rounded-default;
+        transition: background 0.8s;
+        background-position: center;
+
+        &:hover {
+          background: #276749
+            radial-gradient(circle, transparent 1%, #276749 1%) center/15000%;
+
+          &:active {
+            background-color: #fff;
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+
+        &:active {
+          background-color: #033da8;
+          transition: background 0s;
+          background-size: 100%;
+        }
+      }
+
+      &:focus {
+        @apply outline-none;
+      }
+
+      &.--isButtonActive {
+        color: #033da8;
+
+        .drop-down-icon {
+          @apply opacity-100;
+        }
+      }
+    }
+
+    .--isBorderNotActive {
+      border: solid 1px transparent;
+      background-color: transparent;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .--isBorderActive {
+      border: solid 1.5px #033da8;
+      background-color: #033da8;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    &.active {
+      background-color: #f8f0e8;
+    }
+  }
+}

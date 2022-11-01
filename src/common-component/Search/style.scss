@@ -1,0 +1,11 @@
+.search-section {
+  @apply flex items-center justify-between ml-4 mr-2;
+  
+  ::-moz-selection {
+    background: rgb(215, 229, 255);
+  }
+
+  ::selection {
+    background: rgb(215, 229, 255);
+  }
+}

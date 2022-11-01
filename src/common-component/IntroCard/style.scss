@@ -1,0 +1,17 @@
+.introCardContainer {
+  @apply pr-5 pt-3 w-full mr-6;
+
+  .introCardInner {
+    @apply relative bg-introcard w-full bg-cover rounded-lg py-3 px-6 flex items-center;
+
+    .title {
+      @apply text-2xl font-semibold text-darkCyanAV;
+    }
+
+    .closeIcon {
+      @apply absolute cursor-pointer m-3;
+      top: 0;
+      right: 0;
+    }
+  }
+}
