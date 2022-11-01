@@ -4,86 +4,7 @@ import { HiHashtag } from "react-icons/hi2";
 import { BiImage } from "react-icons/bi";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-const user = [
-  {
-    name: "User A",
-    member_status: "pro",
-    project: 25,
-  },
-  {
-    name: "User B",
-    member_status: "pro",
-    project: 25,
-  },
-  {
-    name: "User C",
-    member_status: "pro",
-    project: 25,
-  },
-  {
-    name: "User D",
-    member_status: "pro",
-    project: 25,
-  },
-  {
-    name: "User E",
-    member_status: "pro",
-    project: 25,
-  },
-];
-
-const projects = [
-  {
-    project_name: "001",
-    commit_message: "initial commit",
-    model: ["object detection"],
-    type: "image",
-    train: 1,
-    progress: 90,
-    member: 10,
-    last_update: "yesterday",
-  },
-  {
-    project_name: "002",
-    commit_message: "initial commit",
-    model: ["model", "model"],
-    type: "tag",
-    train: 1,
-    progress: 90,
-    member: 10,
-    last_update: "yesterday",
-  },
-  {
-    project_name: "003",
-    commit_message: "initial commit",
-    model: ["object detection"],
-    type: "tag",
-    train: 1,
-    progress: 90,
-    member: 10,
-    last_update: "yesterday",
-  },
-  {
-    project_name: "004",
-    commit_message: "initial commit",
-    model: ["object detection"],
-    type: "tag",
-    train: 1,
-    progress: 90,
-    member: 10,
-    last_update: "yesterday",
-  },
-  {
-    project_name: "005",
-    commit_message: "initial commit",
-    model: ["object detection"],
-    type: "tag",
-    train: 1,
-    progress: 90,
-    member: 10,
-    last_update: "yesterday",
-  },
-];
+import { Projects, Users } from "../../../../utils";
 
 const Profile = (props) => {
   const { data } = props;
@@ -157,11 +78,11 @@ const SidePanel = () => {
   return (
     <div className="sidePanel">
       <div className="sidePanelInner">
-        <Profile data={user[0]} />
+        <Profile data={Users[0]} />
         <div className="sidePanelLine" />
-        <RecentProject data={projects} />
+        <RecentProject data={Projects} />
         <div className="sidePanelLine" />
-        <AllUser user={user} />
+        <AllUser user={Users} />
       </div>
     </div>
   );

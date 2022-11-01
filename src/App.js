@@ -1,8 +1,8 @@
 import React from "react";
-import Projects from "./view/Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./common-component/Navbar";
+import Projects from "./views/Projects";
 
 const App = () => {
   return (
